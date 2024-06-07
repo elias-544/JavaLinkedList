@@ -2,7 +2,7 @@ package com.elias;
 
 /**
  * @author Elias Khatoun
- * @date 06/06/2024
+ * date 06/06/2024
  * A java implementation of a simple LinkedList
  */
 

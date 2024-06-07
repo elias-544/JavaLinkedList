@@ -6,11 +6,7 @@ package com.elias;
  * A java implementation of a simple LinkedList
  */
 
-
-/**
- * A class to represent a LinkedList
- */
-
+// A public class to represent a LinkedList
 public class JavaLinkedList {
 
     // Instance variables
@@ -177,11 +173,7 @@ public class JavaLinkedList {
 
     }
 
-
-    /**
-     * A private inner class to represent a Node in the list
-     */
-
+    // A private inner class to represent a Node in the list
     private class Node {
 
         // Instance variables

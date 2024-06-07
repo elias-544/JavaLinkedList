@@ -6,6 +6,11 @@ package com.elias;
  * A java implementation of a simple LinkedList
  */
 
+
+/**
+ * A class to represent a LinkedList
+ */
+
 public class JavaLinkedList {
 
     // Instance variables

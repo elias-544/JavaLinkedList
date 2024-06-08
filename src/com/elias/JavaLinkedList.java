@@ -1,23 +1,36 @@
 package com.elias;
 
 /**
- * @author Elias Khatoun
  * date 06/06/2024
  * A java implementation of a simple LinkedList
+ * @author Elias Khatoun
  */
 
 // A public class to represent a LinkedList
 public class JavaLinkedList {
 
-    // Instance variables
+
+    /**
+     * Instance variable to represent the head of the list
+     */
+
     private Node head;
 
-    // Constructor
+
+    /**
+     * A constructor to create a new LinkedList
+     */
+
     public JavaLinkedList() {
         this.head = null;
     }
 
-    // Instance methods
+
+    /**
+     * A method to check if the list is empty
+     * @return Returns true if the list is empty, returns false otherwise
+     */
+
     public boolean isEmpty() {
         return this.head == null;
     }
@@ -173,11 +186,24 @@ public class JavaLinkedList {
 
     }
 
-    // A private inner class to represent a Node in the list
+
+    /**
+     * A private class to represent a Node in the LinkedList
+     */
+
     private class Node {
 
-        // Instance variables
+        /**
+         * Instance variables to represent the value of the Node and the next Node
+         */
+
         private int value;
+
+
+        /**
+         * The next Node in the list
+         */
+
         private Node next;
 
 

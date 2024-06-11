@@ -13,14 +13,12 @@ public class JavaLinkedList {
     /**
      * Instance variable to represent the head of the list
      */
-
     private Node head;
 
 
     /**
      * A constructor to create a new LinkedList
      */
-
     public JavaLinkedList() {
         this.head = null;
     }
@@ -30,7 +28,6 @@ public class JavaLinkedList {
      * A method to check if the list is empty
      * @return Returns true if the list is empty, returns false otherwise
      */
-
     public boolean isEmpty() {
         return this.head == null;
     }
@@ -40,7 +37,6 @@ public class JavaLinkedList {
      * A method to add a new node to the front of the list
      * @param value The value to add to the front of the list
      */
-
     public void addToFront(int value) {
         // Create a new Node from the value
         Node node = new Node(value);
@@ -62,7 +58,6 @@ public class JavaLinkedList {
      * @return The value at the front of the list
      * @throws Exception Cannot look at the front of an empty list
      */
-
     public int lookAtFront() throws Exception {
         if (isEmpty()) {
             throw new Exception("Cannot look at the front of an empty list.");
@@ -75,7 +70,6 @@ public class JavaLinkedList {
     /**
      * A method to remove the first node from the list
      */
-
     public void removeFromFront() {
         if (!isEmpty()) {
             this.head = this.head.next;
@@ -87,7 +81,6 @@ public class JavaLinkedList {
      * A method to add a new node to the back of the list
      * @param value Returns the value at the back of the list
      */
-
     public void addToBackSlow(int value) {
         // Create our new node
         Node node = new Node(value);
@@ -113,7 +106,6 @@ public class JavaLinkedList {
     /**
      * A method to remove the last node from the list
      */
-
     public void removeFromBackSlow() {
         if (!isEmpty()) {
 
@@ -140,7 +132,6 @@ public class JavaLinkedList {
      * @return The value at the back of the list
      * @throws Exception Cannot look at the back of an empty list
      */
-
     public int lookAtBack() throws Exception {
         if (isEmpty()) {
             throw new Exception("Cannot look at the back of an empty list.");
@@ -160,7 +151,6 @@ public class JavaLinkedList {
      * A toString method to represent the list as a string
      * @return A string representation of the list
      */
-
     @Override
     public String toString() {
         if (this.isEmpty()) {
@@ -190,20 +180,17 @@ public class JavaLinkedList {
     /**
      * A private class to represent a Node in the LinkedList
      */
-
     private class Node {
 
         /**
          * Instance variables to represent the value of the Node and the next Node
          */
-
         private int value;
 
 
         /**
          * The next Node in the list
          */
-
         private Node next;
 
 
@@ -211,7 +198,6 @@ public class JavaLinkedList {
          * A constructor to create a new Node with a value
          * @param value The value of the new Node
          */
-
         public Node(int value) {
             this.value = value;
             this.next = null;
@@ -222,7 +208,6 @@ public class JavaLinkedList {
          * A method to get the value of the Node
          * @param next The value of the Node
          */
-
         public void setNext(Node next) {
             this.next = next;
         }
@@ -232,7 +217,6 @@ public class JavaLinkedList {
          * A toString method to represent the Node as a string
          * @return A string representation of the Node
          */
-
         @Override
         public String toString() {
             return String.valueOf(value);

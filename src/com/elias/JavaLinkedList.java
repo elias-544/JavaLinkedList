@@ -20,6 +20,7 @@ public class JavaLinkedList {
      * A constructor to create a new LinkedList
      */
     public JavaLinkedList() {
+        // Initialize the head to null
         this.head = null;
     }
 
@@ -29,6 +30,7 @@ public class JavaLinkedList {
      * @return Returns true if the list is empty, returns false otherwise
      */
     public boolean isEmpty() {
+        // If the head is null, the list is empty
         return this.head == null;
     }
 
@@ -71,6 +73,7 @@ public class JavaLinkedList {
      * A method to remove the first node from the list
      */
     public void removeFromFront() {
+        // Check if the list is empty before removing the first node from the list to avoid a NullPointerException error
         if (!isEmpty()) {
             this.head = this.head.next;
         }
@@ -116,11 +119,13 @@ public class JavaLinkedList {
                 return;
             }
 
-
+            // Go to the back of the list
             Node curr = head;
+            // Stop at the second to last element
             while (curr.next.next != null) {
                 curr = curr.next;
             }
+            // Remove the last element
             curr.next = null;
 
         }
@@ -159,19 +164,21 @@ public class JavaLinkedList {
 
         String listRep = "[";
 
-        // "Loop" over every element in the list
-        // DON'T MESS UP OUR LIST
+        // Start at the head of the list
         Node curr = head;
+        // Loop through the list
         while (curr.next != null) {
             // Add the current value to the String
             listRep += curr + ", ";
             // Move up the list
             curr = curr.next;
         }
-        // Right now, curr is at the LAST value of the list
+        // Add the last value to the String
         listRep += curr;
 
+        // Close the list
         listRep += "]";
+        // Return the String representation of the list
         return listRep;
 
     }

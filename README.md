@@ -1,6 +1,12 @@
 # JavaLinkedList 🚀
 
-This repository of __JavaLinkedList__ is specifically demonstrated using Java. It is perfect for people who are new to programming as well as those studying the basic concepts of data structures. This code provides all important aspects of a LinkedList such as addToFront(), addToBack(), and lookAtFront(), and lookAtBack() functions.
+This repository of __JavaLinkedList__ is made using Java.
+It is perfect for people who are new to programming as well as those studying the basic concepts of data structures.
+This code provides all important aspects of a LinkedList such as:
+- addToFront()
+- addToBack()
+- lookAtFront()
+- lookAtBack()
 
  
 ## Resources 📚
